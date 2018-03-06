@@ -1,3 +1,5 @@
 print("Hello Juniper")
-name = input("Please give me your credit card info:")
-print(name)
+hello = "Hello"
+juniper = "Juniper"
+name = input("Give me your name")
+print(hello + ' ' + juniper)
