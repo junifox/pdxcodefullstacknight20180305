@@ -1,5 +1,5 @@
 numbers = [3, 4, 8, 7, 1]
-running_sum = 0
+running_sum = 0s
 
 for i in range(len(numbers)):
     print(numbers[i])

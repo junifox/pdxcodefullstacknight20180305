@@ -22,7 +22,7 @@ edverb = input("Give me an -ed verb")
 accomplishment = input("Give me an accomplishment")
 pluralnoun = input("Give me a plural noun")
 unsuccessfulathlete = input("Give me an unsuccessful athlete")
-adjective2 = input("Give me one last adjective")
+adjective2 = input("Give me one last adjectived")
 
 print("Just waking up in the" + location)
 print("Gotta thank" + famousperson)
