@@ -1,6 +1,5 @@
 import markovify
 import os
-import random
 import nltk
 
 sad_source = 'modest_mouse_lyrics_sad.txt'
@@ -43,13 +42,19 @@ def main():
         user_input = welcome_screen()
         if user_input == 'Happy' or 'happy':
             for i in range(15):
-                print(text_model2.make_sentence.random.generate())
+                sentence = print(text_model2.make_short_sentence(55))
+                if sentence:
+                    print(sentence)
         if user_input == 'Sad' or 'sad':
             for i in range(15):
-                print(text_model1.make_sentence.random.generate())
+                sentence = print(text_model1.make_short_sentence(55))
+                if sentence:
+                    print(sentence)
         if user_input == 'Manic' or 'manic':
             for i in range(15):
-                print(text_model3.make_sentence.random.generate())
+                sentence = print(text_model3.make_short_sentence(55))
+                if sentence:
+                    print(sentence)
                 break
 
 
