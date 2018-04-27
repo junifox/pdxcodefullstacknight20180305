@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 40px;
+  position: relative;
+  font-family: Helvetica;
+  background-color: rgba(221,221,221,0.2);
+
+}
+
+.header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 340px;
+  background: #d9d9d9;
+  color: #555;
+  float: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}

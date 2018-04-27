@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+    var randURLs = [
+      "https://www.warnerbros.com/archive/spacejam/movie/jam.htm",
+      "http://www.theroommovie.com/",
+      "http://www.homerswebpage.com/",
+      "https://askjeeves.net/",
+      "https://myspace.com/",
+
+    ];
+
+     function goSomewhere() {
+      var randURL = randURLs[Math.floor(Math.random() * randURLs.length)];
+
+      window.location = randURL; // redirect
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="randomstyles.css">
+</head>
+
+<div id="myDiv" class="header">
+  <h2>Why Am I Here?</h2>
+  <h4>the anti-stumbleupon</h4>
+  <span onclick = "goSomewhere(); return false;" class="addBtn">Jump!</span>
+</div>
+
+</html>
