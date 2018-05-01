@@ -16,8 +16,9 @@
      function goSomewhere() {
       var randURL = randURLs[Math.floor(Math.random() * randURLs.length)];
 
-      window.location = randURL; // redirect
+      window.location.setTimeout(goSomewhere, 5000) = randURL; // redirect
     }
+
   </script>
   <link rel="stylesheet" type="text/css" href="randomstyles.css">
 </head>

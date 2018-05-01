@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+  <script>
+    function startTime(){
+      var today = newDate();
+      var h = today.gethours();
+      var m = today.getminutes();
+      var s = today.getminutes();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+  <div id="txt"></div>
+
+</body>
+</html>
