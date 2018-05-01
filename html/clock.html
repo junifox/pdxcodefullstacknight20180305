@@ -2,11 +2,11 @@
 <html lang='en'>
 <head>
   <script>
-    function startTime(){
-      var today = newDate();
-      var h = today.gethours();
-      var m = today.getminutes();
-      var s = today.getminutes();
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
       m = checkTime(m);
       s = checkTime(s);
       document.getElementById('txt').innerHTML =
@@ -22,7 +22,7 @@
 </head>
 
 <body onload="startTime()">
-  <div id="txt"></div>
+  <div id='txt'></div>
 
 </body>
 </html>
