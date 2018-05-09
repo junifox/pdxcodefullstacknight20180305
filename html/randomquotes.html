@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Random Quote Lab</title>
+  <meta charset="utf-8">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+    $.ajax({
+      method: "GET",
+      url: 'https://favqs.com/api/qotd/?format=json'
+    }).done(function(data) {
+        $('#quote').html(data.quote.body);
+    }).fail(function() {
+        alert("error");
+    });
+  });
+  </script>
+</head>
+<body>
+<div id="quote">
+  <span id="body"></span>
+</div>
+</body>
